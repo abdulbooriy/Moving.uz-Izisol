@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      :root {
+        --btn-color: #52AE32;
+        --header-color: #F8F8F8;
+        --primary-color: #52AE32;
+        --secondary-color: white;
+      }
+      .btn-bg {
+        background-color: var(--btn-color);
+      }
+      .header-bg {
+        background-color: var(--header-color);
+      }
+      .text-color {
+        color: var(--primary-color);
+      }
+      .btn-text-color {
+        color: var(--secondary-color);
+      }
+      .hero_image {
+        background: url("./assets/images/hero_image.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="w-full h-20 header-bg">
+      <nav class="container mx-auto flex h-20 justify-between">
+       <div class="flex items-center gap-[173px]">
+         <div>
+          <img src="./assets/images/pereezd-site-logo 1.svg" alt="" />
+        </div>
+        <ul class="flex gap-[60px] text-base">
+          <li>
+            <a href="#">Услуги</a>
+          </li>
+          <li>
+            <a href="#">Партнеры</a>
+          </li>
+          <li>
+            <a href="#">Галерея</a>
+          </li>
+          <li>
+            <a href="#">О нас</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+       </div>
+       <div class="flex items-center gap-[30px]">
+         <div class="flex flex-col">
+         <a class="text-lg font-semibold" href="tel:+998942803738">+998 94 280 37 38</a>
+         <a class="text-lg font-semibold" href="tel:+998933999051">+998 93 399 90 51</a>
+         <span class="text-[12px] text-[#7D7D7D]">c 8:00 до 01:00, ежедневно</sp>
+       </div>
+       <div>
+         <button class="w-[195px] h-[50px] btn-bg btn-text-color">Задать вопрос</button>
+       </div>
+       </div>
+      </nav>
+    </header>
+    <section class="flex justify-center">
+      <div class="w-full h-[760px] hero_image flex justify-center relative">
+        <div class="w-full h-full bg-[#202020] opacity-50 absolute"></div>
+        <div class="flex justify-center flex-col items-center z-10 text-white text-center mt-[150px]">
+        <h1 class="text-[42px]! font-bold! max-w-[660px]">Квартирный и офисный переезд в Ташкенте “под ключ”</h1>
+        <p class="text-lg max-w-[700px] mt-5!">Грузчики по сути дела являются ключевыми фигурами в ходе грузоперевозок. Они выполняют практически весь перечень работ при переезде.</p>
+        <div class="mt-[30px] flex gap-5">
+          <button class="w-[163px] h-[50px] btn-bg">Оставить заявку</button>
+          <button class="w-[140px] h-[50px] bg-[#FFFFFF]! text-color">Калькулятор</button>
+        </div>
+        <div class="flex mt-[81px] text-center gap-[60px]">
+          <p class="w-[115px]">Профессиональная упаковка</p>
+          <p class="w-[115px]">Индивидуальный подход</p>
+          <p class="w-[150px]">Многолетний опыт в области</p>
+        </div>
+        <div class="w-[70px] h-2.5 mt-[98px] flex gap-2.5">
+          <div class="w-2.5 h-2.5 btn-bg rounded-full"></div>
+          <div class="w-2.5 h-2.5 bg-white opacity-40 rounded-full"></div>
+          <div class="w-2.5 h-2.5 bg-white opacity-40 rounded-full"></div>
+          <div class="w-2.5 h-2.5 bg-white opacity-40 rounded-full"></div>
+        </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
