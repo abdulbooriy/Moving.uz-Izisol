@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
-    <title>Document</title>
+    <link rel="icon" href="./assets/images/pereezd-site-logo 1.svg">
+    <title>Izisol</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
+      @import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+      
+      body {
+        font-family: 'Inter', sans-serif;
+      }
       :root {
         --btn-color: #52AE32;
         --header-color: #F8F8F8;
@@ -35,36 +41,39 @@
         width: 190px;
         background-color: #C8C8C8;
       }
+      .container {
+        max-width: 1440px;
+      }
     </style>
   </head>
   <body>
     <!-- header -->
     <header class="w-full h-20 header-bg">
-      <nav class="container mx-auto flex h-20 justify-between">
-       <div class="flex items-center gap-[173px]">
-         <div>
-          <img src="./assets/images/pereezd-site-logo 1.svg" alt="" />
-        </div>
-        <ul class="flex gap-[60px] text-base">
-          <li>
+      <nav class="container mx-auto flex h-20 items-center justify-evenly">
+         <div class="flex items-center gap-[173px]">
+          <a href="#">
+            <img src="./assets/images/pereezd-site-logo 1.svg" alt="" />
+          </a>
+         </div>
+        <ul class="flex gap-[60px] text-base font-medium">
+          <li class="hover:border-b-2 hover:border-[#52AE32] hover:text-[#52AE32]">
             <a href="#">Услуги</a>
           </li>
-          <li>
+          <li class="hover:text-[#52AE32]">
             <a href="#">Партнеры</a>
           </li>
-          <li>
+          <li class="hover:text-[#52AE32]">
             <a href="#">Галерея</a>
           </li>
-          <li>
+          <li class="hover:text-[#52AE32]">
             <a href="#">О нас</a>
           </li>
-          <li>
+          <li class="hover:text-[#52AE32]">
             <a href="#">Контакты</a>
           </li>
         </ul>
-       </div>
        <div class="flex items-center gap-[30px]">
-         <div class="flex flex-col">
+         <div class="flex flex-col h-fit">
          <a class="text-lg font-semibold" href="tel:+998942803738">+998 94 280 37 38</a>
          <a class="text-lg font-semibold" href="tel:+998933999051">+998 93 399 90 51</a>
          <span class="text-[12px] text-[#7D7D7D]">c 8:00 до 01:00, ежедневно</sp>
@@ -80,24 +89,18 @@
     <!-- hero -->
     <section class="flex justify-center">
       <div class="w-full h-[760px] hero_image flex justify-center relative">
-        <div class="w-full h-full bg-[#202020] opacity-50 absolute"></div>
+        <div class="w-full h-full bg-[#202020] opacity-50 absolute z-10"></div>
         <div class="flex justify-center flex-col items-center z-10 text-white text-center mt-[150px]">
-        <h1 class="text-[42px]! font-bold! max-w-[660px]">Квартирный и офисный переезд в Ташкенте “под ключ”</h1>
-        <p class="text-lg max-w-[700px] mt-5!">Грузчики по сути дела являются ключевыми фигурами в ходе грузоперевозок. Они выполняют практически весь перечень работ при переезде.</p>
+        <h1 class="text-[42px]! font-bold! max-w-[700px]">Квартирный и офисный переезд в Ташкенте “под ключ”</h1>
+        <p class="text-lg max-w-[720px] mt-5!">Грузчики по сути дела являются ключевыми фигурами в ходе грузоперевозок. Они выполняют практически весь перечень работ при переезде.</p>
         <div class="mt-[30px] flex gap-5">
           <button class="w-[163px] h-[50px] btn-bg">Оставить заявку</button>
           <button class="w-[140px] h-[50px] bg-[#FFFFFF]! text-color">Калькулятор</button>
         </div>
-        <div class="flex mt-[81px] text-center gap-[60px]">
+        <div class="flex pt-[87px] text-center gap-20">
           <p class="w-[115px]">Профессиональная упаковка</p>
-          <p class="w-[115px]">Индивидуальный подход</p>
+          <p class="w-[150px]">Индивидуальный подход</p>
           <p class="w-[150px]">Многолетний опыт в области</p>
-        </div>
-        <div class="w-[70px] h-2.5 mt-[98px] flex gap-2.5">
-          <div class="w-2.5 h-2.5 btn-bg rounded-full"></div>
-          <div class="w-2.5 h-2.5 bg-white opacity-40 rounded-full"></div>
-          <div class="w-2.5 h-2.5 bg-white opacity-40 rounded-full"></div>
-          <div class="w-2.5 h-2.5 bg-white opacity-40 rounded-full"></div>
         </div>
         </div>
       </div>
@@ -108,10 +111,11 @@
         <p class="text-lg text-[#808080] max-w-[1000px]">Переезд может стать одним из самых приятных и волнительных моментов в жизни — главное, подойти к нему грамотно и ответственно. Если всё тщательно спланировано, весь процесс займет всего один день. Уже к вечеру вы сможете устроиться в любимом кресле, оглядеть свою новую квартиру, где мебель стоит на своих местах, а вещи аккуратно разложены. В доме чистота и порядок, вы чувствуете себя бодро и спокойно — отличное время, чтобы начать планировать новоселье! Такой удобный и доступный переезд возможен и для вас — просто доверьте его нашей команде.</p>
       </div>
      </section>
-     <section class="mt-[120px] mb-10">
+    <!-- hero -->
+      <section class="mt-[120px] mb-10">
       <h3 class="text-center text-[32px]! font-semibold!">Заказать переезд просто</h3>
-      <div class="container mx-auto mt-[60px] place-items-center">
-        <div class="steps_container grid grid-cols-3" id="steps_container">
+      <div class="container mx-auto pt-[60px]">
+        <div class="steps_container flex  flex-wrap justify-center" id="steps_container">
         </div>
       </div>
      </section>
